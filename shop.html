@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stride — Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="shop">
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Stride</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="admin.html">Admin</a>
+        <a href="account.html">Account</a>
+        <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-section container" id="new">
+      <div class="section-header">
+        <div>
+          <h2>New Arrivals</h2>
+          <p>Fresh styles just for you</p>
+        </div>
+      </div>
+
+      <div id="products-grid" class="product-grid">
+        <!-- rendered by script.js -->
+      </div>
+    </section>
+
+    <section class="product-section container gray-bg" id="bestsellers">
+      <div class="section-header">
+        <div>
+          <h2>Best Sellers</h2>
+          <p>Customer favorites</p>
+        </div>
+      </div>
+
+      <div id="bestsellers-grid" class="product-grid">
+        <!-- rendered by script.js -->
+      </div>
+    </section>
+
+    <section class="product-section container" id="offers">
+      <div class="section-header">
+        <div>
+          <h2>Special Offers</h2>
+          <p>Don't miss these deals</p>
+        </div>
+      </div>
+
+      <div id="offers-grid" class="product-grid">
+        <!-- rendered by script.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Stride.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

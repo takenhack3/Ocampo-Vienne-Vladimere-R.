@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stride — Admin</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="admin">
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Stride</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="admin.html">Admin</a>
+        <a href="account.html">Account</a>
+        <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container admin-page">
+    <h1>Admin Dashboard (Demo)</h1>
+
+    <section class="admin-controls">
+      <h3>Add Product</h3>
+      <form id="add-product-form" class="admin-form">
+        <input id="admin-title" placeholder="Title" required />
+        <input id="admin-brand" placeholder="Brand" required />
+        <input id="admin-price" type="number" placeholder="Price" required />
+        <input id="admin-img" placeholder="Image URL" />
+        <input id="admin-sizes" placeholder="Sizes (comma e.g. 7,8,9)" />
+        <button class="btn btn-light" type="submit">Add Product</button>
+      </form>
+    </section>
+
+    <section>
+      <h3>Products (Local)</h3>
+      <div id="admin-products-list" class="product-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Stride — Admin demo.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

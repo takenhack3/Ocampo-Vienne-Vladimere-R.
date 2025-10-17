@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stride — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Stride</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="admin.html">Admin</a>
+        <a href="account.html">Account</a>
+        <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <span class="badge">Spring Collection 2025</span>
+        <h1>Step into Style</h1>
+        <p class="lead">Discover our latest collection of premium footwear. Quality, comfort, and style in every step.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-light" href="shop.html#new">Shop Now</a>
+          <a class="btn btn-outline" href="shop.html#offers">Offers</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <div class="feature">
+        <div class="icon">🔥</div>
+        <h3>Latest Trends</h3>
+        <p>Curated trending footwear, updated every season.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🏆</div>
+        <h3>Premium Quality</h3>
+        <p>Crafted materials and precise construction.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🔒</div>
+        <h3>Secure Shopping</h3>
+        <p>Safe payment and hassle-free returns.</p>
+      </div>
+    </section>
+
+    <section class="product-section container" id="home-featured">
+      <div class="section-header">
+        <div>
+          <h2>Featured Picks</h2>
+          <p>Handpicked for you</p>
+        </div>
+        <a class="btn btn-outline small" href="shop.html">View All →</a>
+      </div>
+
+      <div id="featured-grid" class="product-grid">
+        <!-- rendered by script.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Stride. Designed with passion for modern footwear lovers.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
